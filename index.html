@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>If Tomorrow Never Comes</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f5efe6;
+        color: #302a26;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .book {
+        max-width: 760px;
+        min-height: 100vh;
+        margin: auto;
+        background: #fffdf9;
+        padding: 55px 45px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    }
+
+    .page {
+        display: none;
+        animation: fade 0.4s ease;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateX(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .cover {
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-size: 27px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: #766b63;
+        font-style: italic;
+        margin-bottom: 45px;
+    }
+
+    .part {
+        color: #8b6f5a;
+        letter-spacing: 3px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.9;
+        margin-bottom: 22px;
+    }
+
+    .quote {
+        text-align: center;
+        font-style: italic;
+        margin: 35px 10px;
+        color: #766b63;
+        font-size: 19px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-top: 25px;
+        border-top: 1px solid #ddd3c9;
+    }
+
+    button {
+        border: none;
+        background: #302a26;
+        color: white;
+        padding: 12px 22px;
+        cursor: pointer;
+        font-family: Georgia, serif;
+        font-size: 15px;
+        border-radius: 3px;
+    }
+
+    button:hover {
+        background: #5b4b40;
+    }
+
+    button:disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+
+    .end {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .end h1 {
+        font-size: 38px;
+    }
+
+    @media (max-width: 600px) {
+        .book {
+            padding: 35px 25px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+    <!-- COVER -->
+    <section class="page active">
+        <div class="cover">
+            <h1>If Tomorrow Never Comes</h1>
+
+            <div class="subtitle">
+                A story of love, friendship and letting go
+            </div>
+
+            <p>Jack • Nina • Zen</p>
+
+            <button onclick="nextPage()">START READING →</button>
+        </div>
+    </section>
+
+
+    <!-- PART 1 -->
+    <section class="page">
+        <div class="part">Part 1</div>
+        <h2>The Unexpected Meeting</h2>
+
+        <p>
+            Nina had always believed that life was easier when people stayed
+            where they belonged. Friends remained friends. Strangers remained
+            strangers. And love was something she had no time to think about.
+        </p>
+
+        <p>
+            Then Jack appeared.
+        </p>
+
+        <p>
+            He walked into her life with a smile that seemed impossible to
+            ignore. He talked too much, laughed too loudly and somehow made
+            even the most ordinary day feel different.
+        </p>
+
+        <p>
+            Nina didn't know it yet, but meeting Jack would change everything.
+        </p>
+    </section>
+
+
+    <!-- PART 2 -->
+    <section class="page">
+        <div class="part">Part 2</div>
+        <h2>A Different Kind of Happiness</h2>
+
+        <p>
+            Jack had a strange way of looking at life.
+        </p>
+
+        <p>
+            Whenever Nina complained about her problems, he would simply smile
+            and tell her that tomorrow was never promised.
+        </p>
+
+        <p>
+            "So why waste today being unhappy?" he asked.
+        </p>
+
+        <p>
+            Slowly, Nina began to change. She laughed more. She smiled more.
+            She started enjoying the little things she had forgotten to notice.
+        </p>
+
+        <p>
+            And every time she wondered why she was becoming happier,
+            Jack was there.
+        </p>
+    </section>
+
+
+    <!-- PART 3 -->
+    <section class="page">
+        <div class="part">Part 3</div>
+        <h2>Just Friends</h2>
+
+        <p>
+            Nina and Jack became inseparable.
+        </p>
+
+        <p>
+            They talked about everything. Their dreams. Their fears.
+            Their childhood memories. Even the silly things that nobody else
+            would understand.
+        </p>
+
+        <p>
+            Nina began to believe that perhaps she had finally found someone
+            who understood her completely.
+        </p>
+
+        <p>
+            But there was another person in her life.
+        </p>
+
+        <p>
+            Zen.
+        </p>
+
+        <p>
+            He had been Nina's friend for years. Quiet, patient and always
+            there whenever she needed him.
+        </p>
+    </section>
+
+
+    <!-- PART 4 -->
+    <section class="page">
+        <div class="part">Part 4</div>
+        <h2>The Feeling</h2>
+
+        <p>
+            One evening, Nina realized something she could no longer ignore.
+        </p>
+
+        <p>
+            She was falling in love.
+        </p>
+
+        <p>
+            And the person in her heart was Jack.
+        </p>
+
+        <p>
+            She didn't know when it happened. Perhaps it was his smile.
+            Perhaps it was the way he always knew when she was sad.
+        </p>
+
+        <p>
+            But there was one problem.
+        </p>
+
+        <p>
+            Jack never told her that he felt the same.
+        </p>
+    </section>
+
+
+    <!-- PART 5 -->
+    <section class="page">
+        <div class="part">Part 5</div>
+        <h2>The Secret</h2>
+
+        <p>
+            Jack knew about Nina's feelings.
+        </p>
+
+        <p>
+            He also knew something she didn't.
+        </p>
+
+        <p>
+            His own time was not as long as everyone believed.
+        </p>
+
+        <p>
+            He kept the truth hidden because he didn't want Nina to look at
+            him with sadness.
+        </p>
+
+        <p>
+            He wanted her to remember him smiling.
+        </p>
+
+        <div class="quote">
+            "Sometimes loving someone means giving them happiness,
+            even when you cannot stay."
+        </div>
+    </section>
+
+
+    <!-- PART 6 -->
+    <section class="page">
+        <div class="part">Part 6</div>
+        <h2>Zen</h2>
+
+        <p>
+            Jack began spending more time with Zen.
+        </p>
+
+        <p>
+            At first, Zen didn't understand why.
+        </p>
+
+        <p>
+            Then Jack started talking about Nina.
+        </p>
+
+        <p>
+            He told Zen about the things that made her smile, the things that
+            frightened her and the dreams she was too afraid to chase.
+        </p>
+
+        <p>
+            Slowly, Zen understood what Jack was trying to do.
+        </p>
+
+        <p>
+            Jack wanted Zen to be there for Nina.
+        </p>
+    </section>
+
+
+    <!-- PART 7 -->
+    <section class="page">
+        <div class="part">Part 7</div>
+        <h2>The Wrong Direction</h2>
+
+        <p>
+            Nina couldn't understand Jack anymore.
+        </p>
+
+        <p>
+            The closer she tried to get to him, the more he pushed her away.
+        </p>
+
+        <p>
+            She thought perhaps she had done something wrong.
+        </p>
+
+        <p>
+            But Jack kept pretending everything was fine.
+        </p>
+
+        <p>
+            Behind every smile was a secret.
+            Behind every joke was fear.
+        </p>
+
+        <p>
+            And Nina was getting closer to discovering the truth.
+        </p>
+    </section>
+
+
+    <!-- PART 8 -->
+    <section class="page">
+        <div class="part">Part 8</div>
+        <h2>Letting Go</h2>
+
+        <p>
+            Jack finally made his decision.
+        </p>
+
+        <p>
+            He would let Nina believe that Zen was the person she needed.
+        </p>
+
+        <p>
+            It hurt him more than he could explain.
+        </p>
+
+        <p>
+            Every time Nina smiled at Zen, Jack smiled too.
+        </p>
+
+        <p>
+            Not because he wasn't hurting.
+        </p>
+
+        <p>
+            But because her happiness was more important to him than his own.
+        </p>
+    </section>
+
+
+    <!-- PART 9 -->
+    <section class="page">
+        <div class="part">Part 9</div>
+        <h2>Why Are You Leaving?</h2>
+
+        <p>
+            Nina finally confronted Jack.
+        </p>
+
+        <p>
+            "Why are you pushing me away?"
+        </p>
+
+        <p>
+            Jack looked at her for a long moment.
+        </p>
+
+        <p>
+            He wanted to tell her everything.
+        </p>
+
+        <p>
+            But instead, he smiled.
+        </p>
+
+        <p>
+            "Because sometimes people come into our lives to teach us how to
+            live, not to stay forever."
+        </p>
+
+        <p>
+            Nina didn't understand.
+        </p>
+    </section>
+
+
+    <!-- PART 10 -->
+    <section class="page">
+        <div class="part">Part 10</div>
+        <h2>The Truth</h2>
+
+        <p>
+            Eventually, Nina discovered the truth.
+        </p>
+
+        <p>
+            Jack had been hiding his condition from everyone.
+        </p>
+
+        <p>
+            Suddenly, every smile made sense.
+            Every goodbye made sense.
+            Every moment he had tried to make her happy made sense.
+        </p>
+
+        <p>
+            Nina cried.
+        </p>
+
+        <p>
+            "Why didn't you tell me?"
+        </p>
+
+        <p>
+            Jack simply answered,
+            "Because I wanted you to live, not spend your time waiting for me."
+        </p>
+    </section>
+
+
+    <!-- PART 11 -->
+    <section class="page">
+        <div class="part">Part 11</div>
+        <h2>The Days We Had</h2>
+
+        <p>
+            After the truth was known, everything changed.
+        </p>
+
+        <p>
+            Nina stopped asking how much time they had left.
+        </p>
+
+        <p>
+            Instead, she asked how they should spend it.
+        </p>
+
+        <p>
+            They laughed.
+            They talked.
+            They remembered old stories.
+        </p>
+
+        <p>
+            For the first time, Nina understood what Jack had been trying to
+            teach her all along.
+        </p>
+
+        <p>
+            Tomorrow was never promised.
+        </p>
+    </section>
+
+
+    <!-- PART 12 -->
+    <section class="page">
+        <div class="part">Part 12</div>
+        <h2>Don't Cry</h2>
+
+        <p>
+            One quiet evening, Nina sat beside Jack.
+        </p>
+
+        <p>
+            She held his hand tightly.
+        </p>
+
+        <p>
+            "I'm scared," she whispered.
+        </p>
+
+        <p>
+            Jack smiled.
+        </p>
+
+        <p>
+            "Don't be scared of tomorrow. Remember today."
+        </p>
+
+        <p>
+            Nina cried anyway.
+        </p>
+
+        <p>
+            And Jack gently wiped away her tears.
+        </p>
+    </section>
+
+
+    <!-- PART 13 -->
+    <section class="page">
+        <div class="part">Part 13</div>
+        <h2>The Last Promise</h2>
+
+        <p>
+            Jack asked Nina for one promise.
+        </p>
+
+        <p>
+            "Promise me you'll keep smiling."
+        </p>
+
+        <p>
+            Nina shook her head.
+        </p>
+
+        <p>
+            "How can I smile when you're not here?"
+        </p>
+
+        <p>
+            Jack looked at her and said,
+        </p>
+
+        <div class="quote">
+            "Then smile because I was here."
+        </div>
+
+        <p>
+            Those words stayed with Nina forever.
+        </p>
+    </section>
+
+
+    <!-- PART 14 -->
+    <section class="page">
+        <div class="part">Part 14</div>
+        <h2>If Tomorrow Never Comes</h2>
+
+        <p>
+            Time passed quietly.
+        </p>
+
+        <p>
+            Jack's final days arrived.
+        </p>
+
+        <p>
+            Nina stayed beside him, refusing to leave.
+        </p>
+
+        <p>
+            Zen was there too.
+        </p>
+
+        <p>
+            Jack looked at both of them and smiled.
+        </p>
+
+        <p>
+            He knew that Nina would not be alone.
+        </p>
+
+        <p>
+            And that was enough.
+        </p>
+
+        <p>
+            Sometimes the greatest act of love isn't holding someone forever.
+            Sometimes it is teaching them how to continue after you are gone.
+        </p>
+    </section>
+
+
+    <!-- PART 15 -->
+    <section class="page">
+        <div class="part">Part 15</div>
+        <h2>Forever</h2>
+
+        <p>
+            Years later, Nina still remembered Jack.
+        </p>
+
+        <p>
+            She remembered his laugh.
+            His stupid jokes.
+            His endless smile.
+            And the way he taught her to appreciate every ordinary day.
+        </p>
+
+        <p>
+            Zen remained beside her.
+        </p>
+
+        <p>
+            Life continued.
+        </p>
+
+        <p>
+            But Jack never truly disappeared.
+        </p>
+
+        <p>
+            He lived in every smile Nina gave.
+            In every happy moment she shared.
+            In every tomorrow she chose to embrace.
+        </p>
+
+        <div class="quote">
+            "Some people stay in our lives for a lifetime.
+            Others stay in our hearts forever."
+        </div>
+
+        <div class="end">
+            <h1>THE END</h1>
+            <p>Jack • Nina • Zen</p>
+        </div>
+    </section>
+
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <button id="prevBtn" onclick="prevPage()">← BACK</button>
+        <button id="nextBtn" onclick="nextPage()">NEXT →</button>
+    </div>
+
+</div>
+
+
+<script>
+    const pages = document.querySelectorAll(".page");
+    let currentPage = 0;
+
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showPage(index) {
+        pages.forEach(page => page.classList.remove("active"));
+        pages[index].classList.add("active");
+
+        prevBtn.disabled = index === 0;
+
+        if (index === pages.length - 1) {
+            nextBtn.style.display = "none";
+        } else {
+            nextBtn.style.display = "inline-block";
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    function nextPage() {
+        if (currentPage < pages.length - 1) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    }
+
+    function prevPage() {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    }
+
+    showPage(currentPage);
+</script>
+
+</body>
+</html>
